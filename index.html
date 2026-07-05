@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Daniel Mesmin — Team Lead & Senior Full Stack Engineer" />
+  <title>Daniel Mesmin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="nav__inner container">
+      <a href="#hero" class="nav__logo">DM</a>
+      <nav class="nav__links" id="navLinks">
+        <a href="#about"      class="nav__link" data-i18n="nav.about">À propos</a>
+        <a href="#skills"     class="nav__link" data-i18n="nav.skills">Compétences</a>
+        <a href="#experience" class="nav__link" data-i18n="nav.experience">Expériences</a>
+        <a href="#education"  class="nav__link" data-i18n="nav.education">Formation</a>
+        <a href="#contact"    class="nav__link" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <div class="nav__actions">
+        <button class="lang-toggle" id="langToggle" aria-label="Switch language">EN</button>
+        <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="container hero__inner">
+        <p class="hero__eyebrow" data-i18n="hero.eyebrow">Ingénieur en Sciences Informatiques</p>
+        <h1 class="hero__name">Daniel Mesmin</h1>
+        <p class="hero__title" data-i18n="hero.title">Architecte composants · Team Lead · Full Stack Engineer</p>
+        <p class="hero__bio" data-i18n="hero.bio">Architecte logiciel avec 20 ans d'expérience en développement logiciel, du C++ embarqué au web moderne. 
+          Spécialisé en design et architecture de systèmes et composants modulaires, performants et robustes. Passionné de technologie, j'explore
+          en continu les évolutions du logiciel et les nouvelles approches d'ingénierie.</p>
+        <div class="hero__links">
+          <a href="assets/cv/CV_Daniel_Mesmin.pdf" class="btn btn--primary" download data-i18n="hero.cv">Télécharger le CV</a>
+          <a href="https://www.linkedin.com/in/daniel-mesmin-7bb6a654/"  class="btn btn--outline" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://stackoverflow.com/users/2216110/finrodd" class="btn btn--outline" target="_blank" rel="noopener">Stack Overflow</a>
+          <a href="#contact" class="btn btn--primary" data-i18n="hero.cta">Me contacter</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section section--alt" id="about">
+      <div class="container">
+        <h2 class="section__title" data-i18n="about.title">À propos</h2>
+        <p class="section__text" data-i18n="about.p1">Ingénieur logiciel avec plus de 20 ans d'expérience, j'ai travaillé sur des domaines variés : Systèmes embarqués, Web Apps, Applications Win32 et Linux, Jeux Vidéo (Unreal Engine 4.25), et mobile natif (Android/iOS)</p>
+        <p class="section__text" data-i18n="about.p2">J'aime les environnements où la qualité technique est une priorité : architecture robuste, performante et réutilisable, code optimisé, code review, CI/CD, tests automatisés, standards de code.</p>
+        <p class="section__text" data-i18n="about.p3">Voici quelques exemples marquants de mon parcours :</p>
+        <ul class="timeline__bullets">
+          <li data-i18n="about.p3.b1">Architecture et développement de composants pour systèmes embarqués chez Caterpillar</li>
+          <li data-i18n="about.p3.b2">Conception et développement C++ à Autodesk sur 3DSMax et Maya</li>
+          <li data-i18n="about.p3.b3">Développement Gameplay et Système sur le jeu multijoueur "Dead By Daylight" à Behaviour Interactive</li>
+          <li data-i18n="about.p3.b4">Développement d'applications web full-stack pour divers secteurs</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="container">
+        <h2 class="section__title" data-i18n="skills.title">Compétences</h2>
+        <ul class="skills-list">
+
+          <li class="skill-row">
+            <span class="skill-row__label" data-i18n="skills.backend">Back-End</span>
+            <div class="tags">
+              <span class="tag">C · C++ 11|17|20</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">Java Spring</span>
+              <span class="tag">Python</span>
+            </div>
+          </li>
+
+          <li class="skill-row">
+            <span class="skill-row__label" data-i18n="skills.web">Web</span>
+            <div class="tags">
+              <span class="tag">JavaScript</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">Angular 2|21</span>
+              <span class="tag">Lit · Web Components</span>
+              <span class="tag">OpenLayers</span>
+            </div>
+          </li>
+
+          <li class="skill-row">
+            <span class="skill-row__label" data-i18n="skills.communication">Communication</span>
+            <div class="tags">
+              <span class="tag">Protobuf</span>
+              <span class="tag">MQTT</span>
+              <span class="tag">NATS</span>
+              <span class="tag">REST</span>
+              <span class="tag">STOMP</span>
+              <span class="tag">WebSocket</span>
+            </div>
+          </li>
+
+          <li class="skill-row">
+            <span class="skill-row__label" data-i18n="skills.infra">Infrastructure</span>
+            <div class="tags">
+              <span class="tag">Docker</span>
+              <span class="tag">Compose</span>
+              <span class="tag">Conan</span>
+              <span class="tag">CMake</span>
+              <span class="tag">Npm</span>
+              <span class="tag">Git</span>
+              <span class="tag">Perforce</span>
+              <span class="tag">CI/CD</span>
+              <span class="tag">GitHub Workflows</span>
+              <span class="tag">Azure YML</span>
+              <span class="tag">SonarQube</span>
+            </div>
+          </li>
+
+          <li class="skill-row">
+            <span class="skill-row__label" data-i18n="skills.testing">Tests</span>
+            <div class="tags">
+              <span class="tag">GTest</span>
+              <span class="tag">GMock</span>
+              <span class="tag">Jest</span>
+              <span class="tag">Cypress</span>
+              <span class="tag">Playwright</span>
+            </div>
+          </li>
+
+          <li class="skill-row">
+            <span class="skill-row__label" data-i18n="skills.mobile">Mobile &amp; Gaming</span>
+            <div class="tags">
+              <span class="tag">Android</span>
+              <span class="tag">iOS</span>
+              <span class="tag">Unreal Engine 4.25</span>
+            </div>
+          </li>
+
+          <li class="skill-row">
+            <span class="skill-row__label" data-i18n="skills.os">Système d'exploitation</span>
+            <div class="tags">
+              <span class="tag">Linux (Ubuntu, Debian)</span>
+              <span class="tag">Windows</span>
+              <span class="tag">macOS</span>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section section--alt" id="experience">
+      <div class="container">
+        <h2 class="section__title" data-i18n="exp.title">Expériences</h2>
+        <ol class="timeline">
+
+          <li class="timeline__item">
+            <div class="timeline__meta">
+              <span class="timeline__date"     data-i18n="exp.cat.date">Depuis Septembre 2021</span>
+              <span class="timeline__location">Sophia Antipolis, France</span>
+            </div>
+            <div class="timeline__body">
+              <h3 class="timeline__company">Caterpillar</h3>
+              <p class="timeline__role" data-i18n="exp.cat.role">Architecte logiciel embarqué Full-Stack, Team Lead, Tech Lead</p>
+              <ul class="timeline__bullets">
+                <li data-i18n="exp.cat.b1">Architecture et développement de composants logiciels full-stack et d'applications embarquées destinés aux machines opérées et autonomes</li>
+                <li data-i18n="exp.cat.b2">Conception de systèmes et displays onboard temps réel intégrant cartographie interactive (GIS), détection d'incidents et sécurité des opérateurs</li>
+                <li data-i18n="exp.cat.b3">Leadership technique sur des systèmes embarqués à fortes contraintes de performance, robustesse et connectivité</li>
+                <li data-i18n="exp.cat.b4">Mise en place des pratiques qualité et d'ingénierie : CI/CD, tests automatisés, revues de code, analyse qualité, standards de développement et choix technologiques, encadrement technique d'équipes</li>
+              </ul>
+              <div class="tags tags--sm">
+                <span class="tag">C++20</span>
+                <span class="tag">Angular 15|21</span>
+                <span class="tag">CMake</span>
+                <span class="tag">Conan</span>
+                <span class="tag">Python</span>
+                <span class="tag">GitHub Actions</span>
+              </div>
+            </div>
+          </li>
+
+          <li class="timeline__item">
+            <div class="timeline__meta">
+              <span class="timeline__date"     data-i18n="exp.bhi.date">Fév 2020 – Juil 2021 · 18 mois</span>
+              <span class="timeline__location">Montréal, Canada</span>
+            </div>
+            <div class="timeline__body">
+              <h3 class="timeline__company">Behaviour Interactive</h3>
+              <p class="timeline__role" data-i18n="exp.bhi.role">Développeur Gaming Senior, Référent technique Mobile/Android</p>
+              <ul class="timeline__bullets">
+                <li data-i18n="exp.bhi.b1">Développement système et gameplay sur la licence principale du studio Dead By Daylight avec Unreal Engine 4.25, C++ 17, Java et Node.js</li>
+                <li data-i18n="exp.bhi.b2">Publication sur le Google Play Store, incluant l'intégration des achats intégrés et la gestion du cycle de déploiement</li>
+              </ul>
+              <div class="tags tags--sm">
+                <span class="tag">Unreal Engine 4.25</span>
+                <span class="tag">C++17</span>
+                <span class="tag">Java</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">Android</span>
+              </div>
+            </div>
+          </li>
+
+          <li class="timeline__item">
+            <div class="timeline__meta">
+              <span class="timeline__date"     data-i18n="exp.spiria.date">Nov 2015 – Fév 2020 · 4 ans</span>
+              <span class="timeline__location">Montréal, Canada</span>
+            </div>
+            <div class="timeline__body">
+              <h3 class="timeline__company">Spiria Digital Inc.</h3>
+              <p class="timeline__role" data-i18n="exp.spiria.role">Analyste / Développeur principal web &amp; mobile</p>
+              <ul class="timeline__bullets">
+                <li data-i18n="exp.spiria.b1">Architecture et développement full-stack et mobile de projets dans différents domaines (transport, bancaire, construction et e-commerce)</li>
+                <li data-i18n="exp.spiria.b2">Prévente, analyse des besoins clients, participation aux appels d'offres</li>
+                <li data-i18n="exp.spiria.b3">Team lead / Scrum master dans des équipes Agile</li>
+              </ul>
+              <div class="tags tags--sm">
+                <span class="tag">Java Spring</span>
+                <span class="tag">ASP.NET</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">Angular 2+</span>
+                <span class="tag">Android (Kotlin/Java)</span>
+              </div>
+            </div>
+          </li>
+
+          <li class="timeline__item">
+            <div class="timeline__meta">
+              <span class="timeline__date"     data-i18n="exp.autodesk.date">Oct 2012 – Nov 2015 · 3 ans</span>
+              <span class="timeline__location">Montréal, Canada</span>
+            </div>
+            <div class="timeline__body">
+              <h3 class="timeline__company">Autodesk</h3>
+              <p class="timeline__role" data-i18n="exp.autodesk.role">Développeur Senior C++ et Mobile</p>
+              <ul class="timeline__bullets">
+                <li data-i18n="exp.autodesk.b1">Développement de fonctionnalités/composants sur plusieurs produits Autodesk pour la création 3D et temps réel, dont 3DSMax, Maya, Stingray et Scaleform</li>
+              </ul>
+              <div class="tags tags--sm">
+                <span class="tag">C++</span>
+                <span class="tag">Qt</span>
+                <span class="tag">Objective-C</span>
+                <span class="tag">Java</span>
+                <span class="tag">JNI</span>
+              </div>
+            </div>
+          </li>
+
+          <li class="timeline__item">
+            <div class="timeline__meta">
+              <span class="timeline__date"     data-i18n="exp.alcatel.date">Sep 2010 – Sep 2012 · 2 ans</span>
+              <span class="timeline__location">Sophia-Antipolis, France</span>
+            </div>
+            <div class="timeline__body">
+              <h3 class="timeline__company">Alcatel Lucent</h3>
+              <p class="timeline__role" data-i18n="exp.alcatel.role">Ingénieur R&amp;D C++ et Mobile</p>
+              <ul class="timeline__bullets">
+                <li data-i18n="exp.alcatel.b1">Développement d'un SDK cross-platform pour la création d'apps mobile</li>
+                <li data-i18n="exp.alcatel.b2">Développement natif iOS et Android, Symbian, tests automatisés Python/Shell</li>
+              </ul>
+              <div class="tags tags--sm">
+                <span class="tag">C / C++</span>
+                <span class="tag">iOS</span>
+                <span class="tag">Android</span>
+                <span class="tag">Symbian</span>
+                <span class="tag">Python</span>
+              </div>
+            </div>
+          </li>
+
+          <li class="timeline__item">
+            <div class="timeline__meta">
+              <span class="timeline__date"     data-i18n="exp.assima.date">Août 2006 – Oct 2009 · 3 ans</span>
+              <span class="timeline__location">Paris, France</span>
+            </div>
+            <div class="timeline__body">
+              <h3 class="timeline__company">Assima Plc.</h3>
+              <p class="timeline__role" data-i18n="exp.assima.role">Développeur Logiciel C++</p>
+              <ul class="timeline__bullets">
+                <li data-i18n="exp.assima.b1">Développement des applications Assima Train et Performance Suite</li>
+                <li data-i18n="exp.assima.b2">Développement natif Windows en C++ (Win32) et MSSQL</li>
+              </ul>
+              <div class="tags tags--sm">
+                <span class="tag">C / C++</span>
+                <span class="tag">Win32</span>
+                <span class="tag">MSSQL</span>
+              </div>
+            </div>
+          </li>
+
+        </ol>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section" id="education">
+      <div class="container">
+        <h2 class="section__title" data-i18n="edu.title">Formation</h2>
+        <div class="edu-grid">
+
+          <div class="card">
+            <p class="card__date">2003 – 2006</p>
+            <h3 class="card__title" data-i18n="edu.epu.degree">Diplôme d'ingénieur — Sciences Informatiques</h3>
+            <p class="card__org">École Polytechnique Universitaire de Nice, France</p>
+          </div>
+
+          <div class="card">
+            <p class="card__date">2001 – 2003</p>
+            <h3 class="card__title" data-i18n="edu.iut.degree">DUT Génie Informatique</h3>
+            <p class="card__org">IUT Informatique, Sophia-Antipolis, France</p>
+          </div>
+
+          <div class="card">
+            <p class="card__date">2001</p>
+            <h3 class="card__title" data-i18n="edu.bac.degree">BAC S — Mention Bien</h3>
+            <p class="card__org">Lycée Jules Ferry, Cannes, France</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section section--alt" id="contact">
+      <div class="container">
+        <h2 class="section__title" data-i18n="contact.title">Contact</h2>
+        <p class="section__text" data-i18n="contact.text">Disponible pour des opportunités de Team Lead, d'architecture logicielle ou de développement senior.</p>
+        <div class="contact-links">
+          <a href="mailto:daniel.mes@gmail.com" class="btn btn--primary">Email</a>
+          <a href="https://www.linkedin.com/in/daniel-mesmin-7bb6a654/" class="btn btn--outline" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/dmesmin" class="btn btn--outline" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__text">Daniel Mesmin · <span data-i18n="footer.built">Construit en HTML/CSS</span></p>
+    </div>
+  </footer>
+
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
